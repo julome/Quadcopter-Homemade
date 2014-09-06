@@ -9,6 +9,7 @@
 			- Time sample IMU (Calculate DCM) at 10 ms. Using timer 2 without interrupts and count by 64us.
 			- Time control at 2 * Time sapmple (20ms)
 			- Commands KPr, KIr, KDr and KPy, KIy, KDy for set PID through USART
+			- Readers servo Receiver RX with an Multiplexer and the ICP timer5
 			
 	Based on William Premerlani paper and Jose Julio code for DCM matrix
 	
