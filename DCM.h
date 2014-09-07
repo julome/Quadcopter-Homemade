@@ -28,7 +28,7 @@ extern double gyro;					// Move reference for Yaw control
 #ifndef DCM_H_
 #define DCM_H_
 
-#define Kp_ROLLPITCH 0.15		// Pitch&Roll Proportional Gain
+#define Kp_ROLLPITCH 0.1		// Pitch&Roll Proportional Gain
 #define Ki_ROLLPITCH 0.00001	// Pitch&Roll Integrator Gain
 
 #define LED_READY	PINB7		// LED On for Ready only for ATmega168
