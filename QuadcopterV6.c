@@ -6,10 +6,11 @@
 	Improve - DCM IMU instead Complementary Filter
 			- Without interrupts to temporize samples
 			- ESC at 333 Hz
-			- Time sample IMU (Calculate DCM) at 10 ms. Using timer 2 without interrupts and count by 64us.
+			- Time sample IMU (Calculate DCM) at 10 ms. Using timer 2 without interrupts and step by 64us.
 			- Time control at 2 * Time sapmple (20ms)
 			- Commands KPr, KIr, KDr and KPy, KIy, KDy for set PID through USART
 			- Readers servo Receiver RX with an Multiplexer and the ICP timer5
+			
 			
 	Based on William Premerlani paper and Jose Julio code for DCM matrix
 	
@@ -44,6 +45,7 @@
 	- Min_Throttle Futaba 10CP 1108
 	- Max_Throttle Futaba 10CP 1932
 	- For calibrate ESC Off all control, Disable calibrate_radio and gyro_offset. Go Throttle max...
+	- You must write Flash memory and EEPROM when you programming device
 
 ******************************************************************************/
 
@@ -96,7 +98,7 @@ volatile unsigned char command;							// Command selected for configure PID
 // You must write EEPROM when you programming device
 // PID EEPROM values set
 float EEMEM kpr = 3.0;
-float EEMEM kir = 0.025;
+float EEMEM kir = 0.02;
 float EEMEM kdr = 75;
 
 float EEMEM kpy = 7.0;
