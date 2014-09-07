@@ -16,13 +16,19 @@ Level shifter for TWI
 
 Features:
 
-- First of all, I have developed all this project in AVR-GCC code. I realised that arduino is useful and very easy but in C code you can do all that you want with the AVRs.
+- First of all, I have developed all this project in AVR-GCC code. I realized that arduino is useful and very easy but in C code you can do all that you want with the AVRs.
 
 
-- I have calculate attitude based on William Premerlani and Jose Julio code using the DCM matrix. I have to say that the drift that I have obtained is almost zero. I actualize the DCM matrix by 10ms using the timer2 without interrupts and with 64us by count for improve results.
 
 
-- The main control PID is executed for 20ms, therefore I read IMU by 10ms and I control pitch, roll and yaw for two IMU readers.
+- I have calculated attitude based on William Premerlani and Jose Julio code using the DCM matrix. I have to say that the drift that I have obtained is almost zero. I actualize the DCM matrix by 10ms using the timer2 without interrupts and with a timer set by 64us step for improve results.
+
+
+
+
+- The main control PID is executed by 20ms, therefore I read IMU by 10ms and I control pitch, roll and yaw for two IMU readers.
+
+
 
 
 - I have used two timers of 16 bit for control PWM ESC. The frecuency of PWM for ESC is 333Hz.
