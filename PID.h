@@ -32,8 +32,8 @@ extern double KPy, KIy, KDy;
 // Configure PID
 #define OUT_MAX_RP		 150			// Out PID maximum
 #define OUT_MAX_Y		 150			// Out PID maximum
-#define I_MAX_RP		 100			// Out I_term maximum
-#define I_MAX_Y			 100			// Out I_term maximum
+#define I_MAX_RP		 80			// Out I_term maximum
+#define I_MAX_Y			 80			// Out I_term maximum
 #define DIR				 1				// Direct PID Direction
 //#define DIR			-1				// Inverse PID Direction
 
