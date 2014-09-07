@@ -30,4 +30,6 @@ Features:
 - For read the servos command from receiver I have used a basic multiplexer 74LS151 and the ICP timer 5 for better performance.
 
 - Finally, I have implemented the USART sending commands for set PID parameters by interrupts. Furthermore PID paremeters are saved in EEPROM, so you must write Flash and EEPROM memories.
+- 
+https://www.youtube.com/watch?v=f1ZoPM6jPvY
 
