@@ -37,6 +37,8 @@
 #include "twi_master.h"
 #include "util/delay.h"
 
+#define F_CPU           16000000UL			// Frequency XTAL 16MHz
+
 // Write byte to IMU through TWI
 void TWI_Write(unsigned char reg, unsigned char data){  // reg= Direction de registro, data= data to write
 
