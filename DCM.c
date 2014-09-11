@@ -209,7 +209,7 @@ void matrix_update(unsigned char t, double gyro)
 		
 	dt = 64E-6 * (double)t;												// Take dt in us	
 	for (int i = 0; i < 3; i++){								// Gyro vector scaled = (gyro_vector / scale_config) to rad
-	gyro_vector[i] = a_gyro[i] * scale_gyro2000;		
+	gyro_vector[i] = a_gyro[i] * scale_gyro1000;		
 	}		
 	for (int i = 0; i < 3; i++){								// Add drift correction
 	omega_vector[i] = gyro_vector[i] + omega[i];	
