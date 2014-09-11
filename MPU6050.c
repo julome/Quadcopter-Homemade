@@ -104,7 +104,7 @@ void imu_init(){
 	_delay_ms(2);
 	TWI_Write(MPU6050_RA_SMPLRT_DIV, MPU6050_CLOCK_DIV_296);						// Sample rate divider at 19 => Sample = 1KHz/(1+19) = 50 Hz with 1 KHz sample if DLPF ON
 	_delay_ms(2);
-	TWI_Write(MPU6050_RA_GYRO_CONFIG, MPU6050_GYRO_FS_2000);					// Gyro Scale +/- 2000 º/s
+	TWI_Write(MPU6050_RA_GYRO_CONFIG, MPU6050_GYRO_FS_1000);					// Gyro Scale +/- 1000 º/s
 	_delay_ms(2);
 	TWI_Write(MPU6050_RA_ACCEL_CONFIG, MPU6050_ACCEL_FS_8);						// Accel Scale at +/- 8 G
 	_delay_ms(2);
